@@ -57,4 +57,4 @@ az ml model deploy --name diabetes-prod-aks --ct $(ml-aks-name) -f model.json --
 ```
 ## Further notes
 
-If you want to scope your project to your Azure Machine Learning service workspace, you can install the [Machine Learning DevOps extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml) in your Azure DevOps project.
+If you want to scope your project to your Azure Machine Learning service workspace, you can install the [Machine Learning DevOps extension](https://marketplace.visualstudio.com/items?itemName=ms-air-aiagility.vss-services-azureml) in your Azure DevOps project
