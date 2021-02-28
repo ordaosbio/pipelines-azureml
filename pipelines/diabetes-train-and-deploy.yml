@@ -32,14 +32,14 @@ steps:
     scriptType: 'bash'
     inlineScript: 'az ml folder attach -w $(ml-ws) -g $(ml-rg)'
 
-- task: AzureCLI@2
-  displayName: 'Create compute for training'
-  inputs:
-    azureSubscription: $(ml-ws-connection)
-    workingDirectory: $(ml-path)
-    scriptLocation: inlineScript
-    scriptType: 'bash'
-    inlineScript: 'az ml computetarget create amlcompute -n $(ml-ct) --vm-size STANDARD_D2_V2 --max-nodes 1'
+# - task: AzureCLI@2
+#   displayName: 'Create compute for training'
+#   inputs:
+#     azureSubscription: $(ml-ws-connection)
+#     workingDirectory: $(ml-path)
+#     scriptLocation: inlineScript
+#     scriptType: 'bash'
+#     inlineScript: 'az ml computetarget create amlcompute -n $(ml-ct) --vm-size STANDARD_D2_V2 --max-nodes 1'
   
 - task: AzureCLI@2
   displayName: 'Train model'
